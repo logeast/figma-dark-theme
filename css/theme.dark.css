@@ -1,0 +1,125 @@
+/* body[data-color-mode='dark']'] { */
+body[data-theme-mode='dark'] {
+    /* figma CSS 自定义属性 */
+    --bg-primary-btn: #18a0fb;
+    --bg-toolbar: #2c2c2c;
+    --bg-toolbar-hover: #000;
+    --bg-toolbar-active: #18a0fb;
+    --bg-toolbar-selection: #18a0fb;
+    --fg-toolbar: hsla(0, 0%, 100%, 0.8);
+    --fg-toolbar-hover: #fff;
+    --fg-toolbar-active: #fff;
+    --fg-toolbar-disabled: hsla(0, 0%, 100%, 0.5);
+    --fg-toolbar-filename: #fff;
+    --fg-toolbar-foldername: #aaa;
+    --fg-toolbar-chevron: #fff;
+    --fg-toolbar-unsavedicon: hsla(0, 0%, 100%, 0.4);
+    --bg-overlay: #222;
+    --bg-overlay-active: #18a0fb;
+    --bg-overlay-outline: rgba(0, 0, 0, 0.1);
+    --bg-overlay-inner-outline: #000;
+    --fg-overlay: #fff;
+    --fg-overlay-active: #fff;
+    --fg-overlay-secondary: hsla(0, 0%, 100%, 0.4);
+    --fg-overlay-sep: hsla(0, 0%, 100%, 0.2);
+    --fg-overlay-right: #fff;
+
+    /* darkmode CSS 自定义属性 */
+    --dark-bg-primary: #0d1117;
+    --dark-bg-canvas: #222;
+    --dark-border-primary: #30363d;
+    --dark-border-secondary: #2f2f2f;
+    --dark-text-primary: #c9d1d9;
+    --dark-text-secondary: #8b949e;
+}
+
+[data-theme-mode='dark'] [class*='in_app_page--appFont'] {
+    color: var(--dark-text-primary);
+}
+
+[data-theme-mode='dark'] [class*='sidebar--sidebarScrollContainer'] {
+    background-color: var(--dark-bg-canvas);
+}
+
+[data-theme-mode='dark'] [class*='sidebar--navContent'] {
+    background-color: var(--dark-bg-canvas);
+}
+
+[data-theme-mode='dark'] [class*='sidebar--navDefault'] {
+    box-shadow: 1px 0 0 0 var(--dark-border-primary);
+}
+
+[data-theme-mode='dark'] [class*='sidebar--selected'] {
+    background-color: var(--dark-bg-primary);
+}
+
+[data-theme-mode='dark'] [class*='sidebar--divider'] {
+    background-color: var(--dark-border-secondary);
+}
+
+[data-theme-mode='dark'] [class*='sidebar--lastSectionFixed'] {
+    background-color: var(--dark-bg-canvas);
+}
+
+[data-theme-mode='dark'] [class*='user_view--rowWithDivider'] {
+    border-bottom-color: var(--dark-border-secondary);
+}
+
+[data-theme-mode='dark'] [class*='user_view--newToken'] {
+    fill: var(--dark-text-primary);
+}
+
+[data-theme-mode='dark'] [class*='raw_components--_iconButton']:hover {
+    color: var(--dark-text-primary);
+    fill: currentColor;
+    background-color: var(--dark-bg-primary);
+}
+[data-theme-mode='dark'] [class*='raw_components--_iconButton'] {
+    color: var(--dark-text-primary);
+    fill: currentColor;
+}
+
+[data-theme-mode='dark']
+    [class*='file_browser_view--fileBrowserPageViewContaine'] {
+    color: var(--dark-text-primary);
+    background-color: var(--dark-bg-canvas);
+}
+
+[data-theme-mode='dark'] [class*='new_team_link--buttonHover']:hover {
+    color: var(--dark-text-primary);
+    background-color: var(--dark-bg-primary);
+}
+
+[data-theme-mode='dark'] [class*='tool_bar--toolBarContainer'] {
+    background-color: var(--dark-bg-canvas);
+    box-shadow: 0 1px 0 0 var(--dark-border-primary);
+}
+
+[data-theme-mode='dark'] [class*='tab--unselected'] {
+    color: var(--dark-text-secondary);
+}
+
+[data-theme-mode='dark'] [class*='tab--unselected']:hover,
+[data-theme-mode='dark'] [class*='tab--selected'] {
+    color: var(--dark-text-primary);
+}
+
+[data-theme-mode='dark'] [class*='tool_bar--toolBarButton'] {
+    color: var(--dark-text-primary);
+}
+
+[data-theme-mode='dark']
+    [class*='tool_bar--toolBarButton']:hover:not(:disabled) {
+    color: var(--dark-text-primary);
+    background-color: var(--dark-bg-primary);
+}
+
+[data-theme-mode='dark']
+    [class*='plugin_tiles--installedPluginsListContainer'] {
+    border-right-color: var(--dark-border-primary);
+}
+
+[data-theme-mode='dark'] [class*='plugin_tiles--h2'],
+[data-theme-mode='dark'] [class*='plugin_tiles--h3'] {
+    color: var(--dark-text-primary);
+}

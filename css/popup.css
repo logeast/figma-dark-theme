@@ -1,0 +1,99 @@
+:root {
+    --bg-primary: #0d1117;
+    --bg-canvas: #fff;
+    --border-primary: #30363d;
+    --border-secondary: #2f2f2f;
+    --text-primary: #c9d1d9;
+    --text-secondary: #8b949e;
+    --text-link: #18a0fb;
+}
+
+body[data-theme-mode='dark'] {
+    --bg-primary: #fff;
+    --bg-canvas: #222;
+    --border-primary: #fff;
+    --border-secondary: #2f2f2f;
+    --text-primary: #c9d1d9;
+    --text-secondary: #8b949e;
+    --text-link: #18a0fb;
+}
+
+body {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    margin: 0;
+    width: 160px;
+    height: 90px;
+    font-family: Inter, sans-serif;
+    background-color: var(--bg-canvas);
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-link);
+}
+.divider {
+    display: inline-block;
+    margin: 0 8px;
+    width: 1px;
+    height: 10px;
+    background-color: var(--text-link);
+}
+
+.toggle-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 12px;
+    font-size: 12px;
+}
+
+.toggle {
+    position: relative;
+    height: 24px;
+    width: 48px;
+    background: transparent;
+    border-radius: 24px;
+    visibility: hidden;
+    cursor: pointer;
+}
+.toggle::before,
+.toggle::after {
+    content: '';
+    display: block;
+    transition: all 0.2s ease-in-out;
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    will-change: transform;
+}
+.toggle::before {
+    background: transparent;
+    border: 2px solid var(--border-primary);
+    border-radius: 20px;
+    left: 0;
+    right: 0;
+}
+.toggle::after {
+    background: var(--bg-primary);
+    border-radius: 50%;
+    height: 16px;
+    width: 16px;
+    left: 0;
+    transform: translateX(6px);
+}
+
+.toggle:checked::before {
+}
+.toggle:checked::after {
+    transform: translateX(26px);
+}

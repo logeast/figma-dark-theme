@@ -1,0 +1,25 @@
+{
+  "name": "Figma Dark Theme",
+  "manifest_version": 2,
+  "version": "1.0",
+  "description": "Figma Dark Theme | Figma 网页版暗黑模式",
+  "page_action": {
+    "default_icon": "images/icon.png",
+    "default_title": "Figma Dark Theme",
+    "default_popup": "html/popup.html"
+  },
+  "background": {
+    "scripts": ["js/background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.figma.com/*"],
+      "js": ["js/theme.js"],
+      "css": ["css/theme.dark.css"],
+      "run_at": "document_start"
+    }
+  ],
+  "options_page": "html/options.html",
+  "homepage_url": "https://github.com/logeast/figma-dark-theme",
+  "permissions": ["tabs", "activeTab", "declarativeContent", "storage"]
+}
