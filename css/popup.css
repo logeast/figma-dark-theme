@@ -2,7 +2,7 @@
     --bg-primary: #0d1117;
     --bg-canvas: #fff;
     --border-primary: #30363d;
-    --border-secondary: #2f2f2f;
+    --border-secondary: #dfe1e6;
     --text-primary: #c9d1d9;
     --text-secondary: #8b949e;
     --text-link: #18a0fb;
@@ -12,7 +12,7 @@ body[data-theme-mode='dark'] {
     --bg-primary: #fff;
     --bg-canvas: #222;
     --border-primary: #fff;
-    --border-secondary: #2f2f2f;
+    --border-secondary: #30363d;
     --text-primary: #c9d1d9;
     --text-secondary: #8b949e;
     --text-link: #18a0fb;
@@ -38,7 +38,7 @@ a {
     margin: 0 8px;
     width: 1px;
     height: 10px;
-    background-color: var(--text-link);
+    background-color: var(--border-secondary);
 }
 
 .toggle-wrapper {

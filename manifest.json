@@ -1,11 +1,10 @@
 {
-  "name": "Figma Dark Theme",
   "manifest_version": 2,
+  "name": "Figma Dark Theme",
+  "description": "A Dark theme for all of Figma pages.",
   "version": "1.0",
-  "description": "Figma Dark Theme | Figma 网页版暗黑模式",
-  "page_action": {
+  "browser_action": {
     "default_icon": "images/icon.png",
-    "default_title": "Figma Dark Theme",
     "default_popup": "html/popup.html"
   },
   "background": {
@@ -21,5 +20,10 @@
   ],
   "options_page": "html/options.html",
   "homepage_url": "https://github.com/logeast/figma-dark-theme",
-  "permissions": ["tabs", "activeTab", "declarativeContent", "storage"]
+  "permissions": ["tabs", "activeTab", "storage"],
+  "icons": {
+    "64": "images/icon64.png",
+    "128": "images/icon128.png",
+    "192": "images/icon192.png"
+}
 }
