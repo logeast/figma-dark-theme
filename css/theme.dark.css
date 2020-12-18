@@ -141,6 +141,12 @@ body[data-theme-mode='dark'] {
     background-color: var(--dark-bg-canvas);
 }
 
+/* search page */
+[data-theme-mode='dark']
+    [class*='community_hub_landing--_communityHubContentBackground'] {
+    background-color: var(--dark-bg-canvas);
+}
+
 /* team page */
 [data-theme-mode='dark'] [class*='folder_list_card--folderCard'] {
     border: 1px solid var(--dark-border-secondary);
@@ -246,7 +252,7 @@ body[data-theme-mode='dark'] {
     border: 1px solid var(--dark-border-primary);
 }
 
-/* icons */
+/* pannel */
 [data-theme-mode='dark'] [class*='close_button--closeX'],
 [data-theme-mode='dark'] [class*='hint_panel--onboardingDismissIcon'],
 [data-theme-mode='dark'] [class*='hint_panel--onboardingIcon'],
@@ -268,6 +274,61 @@ body[data-theme-mode='dark'] {
 [data-theme-mode='dark'] [class*='segmented_control--segmentUnselected'] {
     color: var(--dark-text-secondary);
     fill: currentColor;
+}
+
+[data-theme-mode='dark']
+    [class*='object_row--row'][class*='object_row--selected']:not([class*='object_row--disabled']) {
+    background-color: var(--dark-bg-primary);
+}
+
+[data-theme-mode='dark']
+    [class*='object_row--row'][class*='object_row--parentSelected'] {
+    background-color: var(--dark-bg-primary);
+}
+
+[data-theme-mode='dark']
+    [class*='object_row--row'][class*='object_row--frame'][class*='object_row--topLevel'][class*='object_row--selected']:not([class*='object_row--disabled']) {
+    background-color: var(--dark-bg-primary);
+}
+
+[data-theme-mode='dark']
+    [class*='object_row--row'][class*='object_row--instance'][class*='object_row--parentSelected'],
+[data-theme-mode='dark']
+    [class*='object_row--row'][class*='object_row--instanceChild'][class*='object_row--parentSelected'],
+[data-theme-mode='dark']
+    [class*='object_row--row'][class*='object_row--stateGroup'][class*='object_row--parentSelected'],
+[data-theme-mode='dark']
+    [class*='object_row--row'][class*='object_row--symbol'][class*='object_row--parentSelected'],
+[data-theme-mode='dark']
+    [class*='object_row--row'][class*='object_row--symbolChild'][class*='object_row--parentSelected'] {
+    background-color: var(--dark-bg-primary);
+}
+
+[data-theme-mode='dark']
+    [class*='object_row--row'][class*='object_row--instance'][class*='object_row--selected'],
+[data-theme-mode='dark']
+    [class*='object_row--row'][class*='object_row--instanceChild'][class*='object_row--selected'],
+[data-theme-mode='dark']
+    [class*='object_row--row'][class*='object_row--stateGroup'][class*='object_row--selected'],
+[data-theme-mode='dark']
+    [class*='object_row--row'][class*='object_row--symbol'][class*='object_row--selected'],
+[data-theme-mode='dark']
+    [class*='object_row--row'][class*='object_row--symbolChild'][class*='object_row--selected'] {
+    background-color: var(--dark-bg-primary);
+}
+
+[dark-theme-mode='dark']
+    [class*='object_row--row'][class*='object_row--instance'][class*='object_row--topLevel'][class*='object_row--selected'],
+[dark-theme-mode='dark']
+    [class*='object_row--row'][class*='object_row--stateGroup'][class*='object_row--topLevel'][class*='object_row--selected'],
+[dark-theme-mode='dark']
+    [class*='object_row--row'][class*='object_row--symbol'][class*='object_row--topLevel'][class*='object_row--selected'] {
+    background-color: var(--dark-bg-primary);
+}
+
+[data-theme-mode='dark'] [class*='object_row--rowText'],
+[data-theme-mode='dark'] [class*='object_row--rowActions'] {
+    background-color: transparent;
 }
 
 [data-theme-mode='dark'] [class*='properties_panel--tabsHeaderBordered'],
