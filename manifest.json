@@ -1,29 +1,39 @@
 {
   "manifest_version": 2,
   "name": "Figma Dark Theme",
-  "description": "A Dark theme for all of Figma pages.",
-  "version": "1.0.1",
+  "description": "A dark theme for Figma editor page and other main pages.",
+  "version": "1.0.2",
   "browser_action": {
     "default_icon": "images/logo.png",
     "default_popup": "html/popup.html"
   },
   "background": {
-    "scripts": ["js/background.js"]
+    "scripts": [
+      "js/background.js"
+    ]
   },
   "content_scripts": [
     {
-      "matches": ["https://*.figma.com/*"],
-      "js": ["js/theme.js"],
-      "css": ["css/theme.dark.css"],
+      "matches": [
+        "https://*.figma.com/*"
+      ],
+      "js": [
+        "js/theme.js"
+      ],
+      "css": [
+        "css/theme.dark.css"
+      ],
       "run_at": "document_start"
     }
   ],
   "options_page": "html/options.html",
   "homepage_url": "https://github.com/logeast/figma-dark-theme",
-  "permissions": ["storage"],
+  "permissions": [
+    "storage"
+  ],
   "icons": {
     "64": "images/logo64.png",
     "128": "images/logo128.png",
     "192": "images/logo192.png"
-}
+  }
 }
