@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Figma Dark Theme",
-  "description": "A dark theme for Figma editor page and other main pages.",
+  "description": "A dark theme for Figma editor and some other pages.",
   "version": "1.0.2",
   "browser_action": {
     "default_icon": "images/logo.png",
