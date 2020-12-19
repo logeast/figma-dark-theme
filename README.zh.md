@@ -2,7 +2,7 @@
 
 [English](./README.md) | [中文简体](./README.zh.md)
 
-用于 Google Chrome 和 Microsoft Edge 浏览器的 Figma 网页版暗黑模式。
+用于 Google Chrome 和 Microsoft Edge 浏览器的 Figma 网页版深色主题。
 
 拓展程序会将所有 Figma.com 网站及编辑器的页面的更改为深色主题。
 
