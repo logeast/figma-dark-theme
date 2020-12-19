@@ -286,6 +286,24 @@ body[data-theme-mode='dark'] {
     background-color: var(--dark-bg-primary);
 }
 
+[data-theme-mode='dark'] [class*='component_sidebar--container'] {
+    background-color: var(--dark-bg-canvas);
+}
+
+[data-theme-mode='dark'] [class*='library_item_tile--thumbWrapper'],
+[data-theme-mode='dark'] [class*='library_item_tile--thumbWrapperListView'] {
+    background-color: var(--dark-bg-primary);
+}
+
+[data-theme-mode='dark'] [class*='library_item_tile--nameGrid'] {
+    background-color: var(--dark-bg-canvas);
+}
+
+[data-theme-mode='dark'] [class*='library_section_header--sectionHeaderH1'] {
+    background-color: var(--dark-bg-primary);
+    color: var(--dark-text-primary);
+}
+
 [data-theme-mode='dark']
     [class*='object_row--row'][class*='object_row--frame'][class*='object_row--topLevel'][class*='object_row--selected']:not([class*='object_row--disabled']) {
     background-color: var(--dark-bg-primary);
@@ -317,13 +335,14 @@ body[data-theme-mode='dark'] {
     background-color: var(--dark-bg-primary);
 }
 
+/* oooops! has error */
 [dark-theme-mode='dark']
     [class*='object_row--row'][class*='object_row--instance'][class*='object_row--topLevel'][class*='object_row--selected'],
 [dark-theme-mode='dark']
     [class*='object_row--row'][class*='object_row--stateGroup'][class*='object_row--topLevel'][class*='object_row--selected'],
 [dark-theme-mode='dark']
     [class*='object_row--row'][class*='object_row--symbol'][class*='object_row--topLevel'][class*='object_row--selected'] {
-    background-color: var(--dark-bg-primary);
+    background-color: var(--dark-bg-primary) !important;
 }
 
 [data-theme-mode='dark'] [class*='object_row--rowText'],
