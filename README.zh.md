@@ -27,3 +27,17 @@
 ![Dark-1080_960](./assets/Dark-1280_800.png)
 
 ![Light-1080_960](./assets/Light-1280_800.png)
+
+## 打包和贡献
+
+首先需要安装 `zip` 包。
+
+```bash
+# Add executable permission
+chmod +x build.sh
+
+# Build
+bash build.sh
+```
+
+打包成功后 `dist` 目录下查看文件。

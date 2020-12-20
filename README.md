@@ -27,3 +27,17 @@ This extension will change appearance of all Figma pages and editor to a dark th
 ![Dark-1080_960](./assets/Dark-1280_800.png)
 
 ![Light-1080_960](./assets/Light-1280_800.png)
+
+## Build && Contribute
+
+You shold install the `zip` package on your marchine firstly.
+
+```bash
+# Add executable permission
+chmod +x build.sh
+
+# Build
+bash build.sh
+```
+
+Then you can find files in `dist` directory.
