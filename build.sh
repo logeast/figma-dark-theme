@@ -31,7 +31,7 @@ echo The dist directory now has those files.
 echo -e ${cyan}$(ls $dist)${nocolor}
 echo
 
-echo -e The zip files to ${cyan}chrome-ext.zip${nocolor} and ${cyan}edge-ext.zip${nocolor}.
+echo -e Zip files to ${cyan}chrome-ext.zip${nocolor} and ${cyan}edge-ext.zip${nocolor}.
 cd dist
 
 # Judge zip command exit or not.
