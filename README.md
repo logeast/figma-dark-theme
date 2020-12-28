@@ -1,6 +1,6 @@
 # Figma Dark Theme
 
-[English](./README.md) | [中文简体](./README.zh.md)
+[English](./README.md) | [简体中文](./README.zh.md)
 
 Figma Dark Theme - Extension for Google Chrome and Microsoft Edge.
 
