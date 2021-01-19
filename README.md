@@ -10,13 +10,13 @@ This extension will change appearance of all Figma pages and editor to a dark th
 
 ## Install
 
-**[Chrome Extension]()**
+**[Chrome Extension](https://github.com/logeast/figma-dark-theme/releases/tag/v1.0.4)**
 
 **[Edge Extension](https://microsoftedge.microsoft.com/addons/detail/figma-dark-theme/pniljokeankpoomopaaekblacciihnpp)**
 
 ## Resource
 
-**[Figma Draft](https://www.figma.com/community/file/921577254332071556/Figma-Dark-Theme)**
+**[Figma Draft](https://www.figma.com/community/file/921577254332071556)**
 
 ### Logo
 
